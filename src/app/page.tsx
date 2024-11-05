@@ -55,7 +55,7 @@ export default function BlogPage() {
         </div>
 
         <div className="bg-green-100 p-8 rounded-md flex items-center">
-          <Image src="/drogas.jpg" width={250} height={250} alt="Imagen sobre efectos en el cuerpo" className="rounded-xl mr-8" />
+          <Image src="/drogas7.jpg" width={250} height={250} alt="Imagen sobre efectos en el cuerpo" className="rounded-xl mr-8" />
           <div>
             <h3 className="text-3xl font-semibold text-teal-600 mb-4">Efectos en el cuerpo:</h3>
             <ul className="list-disc list-inside text-gray-700 text-2xl">
