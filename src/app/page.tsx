@@ -1,20 +1,11 @@
+import Nav from "app/components/Nav/nav";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function BlogPage() {
   return (
     <div className="font-sans">
-      {/* Header */}
-      <header className="bg-white p-6 shadow-md flex justify-between items-center">
-        <div className="text-3xl font-bold">Mi Blog</div>
-        <nav className="space-x-6">
-          <Link href="/">Inicio</Link>
-          <Link href="https://www.youtube.com/@Wero09Anano/">Sobre mí</Link>
-          <Link href="/temas">Temas</Link>
-          <Link href="/contacto">Contacto</Link>
-        </nav>
-      </header>
-
+      <Nav/>
       {/* Hero Section */}
       <section className="text-center py-16 bg-gray-100">
         <h1 className="text-5xl font-bold mb-4">
@@ -34,7 +25,7 @@ export default function BlogPage() {
             <p className="text-gray-700 text-2xl">
               Son sustancias que, al ingresar en el organismo, pueden alterar su funcionamiento físico o mental.
             </p>
-            <Link href="/leer-mas/drogas">
+            <Link href="/queSon/">
               <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded">Leer más</button>
             </Link>
           </div>
@@ -106,7 +97,7 @@ export default function BlogPage() {
 
         <nav className="space-x-6 mt-4">
           <Link href="/">Inicio</Link>
-          <Link href="/sobre">Sobre mí</Link>
+          <Link href="https://www.youtube.com/@Wero09Anano/">Sobre mí</Link>
           <Link href="/temas">Temas</Link>
           <Link href="/contacto">Contacto</Link>
         </nav>
