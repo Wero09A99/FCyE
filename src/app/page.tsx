@@ -1,6 +1,9 @@
+"use client";
+import Footer from "app/components/Footer/footer";
 import Nav from "app/components/Nav/nav";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function BlogPage() {
   return (
@@ -26,7 +29,7 @@ export default function BlogPage() {
               Son sustancias que, al ingresar en el organismo, pueden alterar su funcionamiento físico o mental.
             </p>
             <Link href="/queSon/">
-              <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded">Leer más</button>
+              <button className="mt-4 bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded">Leer más</button>
             </Link>
           </div>
         </div>
@@ -38,8 +41,8 @@ export default function BlogPage() {
               <li><strong>Legales:</strong> Drogas cuyo consumo está regulado en muchas sociedades, como el alcohol, tabaco y cafeína.</li>
               <li><strong>Ilegales:</strong> Drogas prohibidas en la mayoría de los países, como la cocaína, heroína y metanfetaminas.</li>
             </ul>
-            <Link href="/leer-mas/clasificacion">
-              <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded">Leer más</button>
+            <Link href="/clasificacion/">
+              <button className="mt-4 bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded">Leer más</button>
             </Link>
           </div>
           <Image src="/drogas6.jpg" width={250} height={250} alt="Imagen sobre la clasificación de drogas" className="rounded-xl" />
@@ -55,8 +58,8 @@ export default function BlogPage() {
               <li>Sistema digestivo: Pérdida de apetito y malnutrición.</li>
               <li>Sistema inmunológico: Debilitamiento que aumenta la susceptibilidad a infecciones.</li>
             </ul>
-            <Link href="/leer-mas/efectos-cuerpo">
-              <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded">Leer más</button>
+            <Link href="/efectos/">
+              <button className="mt-4 bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded">Leer más</button>
             </Link>
           </div>
         </div>
@@ -69,8 +72,8 @@ export default function BlogPage() {
               <li>Psicosis y alucinaciones: Drogas alucinógenas y estimulantes pueden causar episodios de psicosis.</li>
               <li>Toma de decisiones y autocontrol: Afectación del juicio y aumento de conductas impulsivas.</li>
             </ul>
-            <Link href="/leer-mas/efectos-mente">
-              <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded">Leer más</button>
+            <Link href="/efectos_mente/">
+              <button className="mt-4 bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded">Leer más</button>
             </Link>
           </div>
           <Image src="/drogas4.jpg" width={250} height={250} alt="Imagen sobre efectos en la mente" className="rounded-xl" />
@@ -83,25 +86,19 @@ export default function BlogPage() {
             <p className="text-gray-700 text-2xl">
               Las repercusiones dependen del tipo de droga, la frecuencia de uso y las leyes de cada país.
             </p>
-            <Link href="/leer-mas/consecuencias-sociales">
-              <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded">Leer más</button>
+            <Link href="/consecuencias_s_y_l">
+              <button className="mt-4 bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded">Leer más</button>
             </Link>
           </div>
         </div>
+        <Link href="/testimonios/">
+              <button className="mt-10 bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded">Testimonios</button>
+        </Link>
       </section>
+      <div className="mt-10">
+      <Footer/>
+      </div>
 
-      {/* Footer */}
-      <footer className="bg-teal-700 text-white p-10 text-center">
-        <p>&copy; 2024 Blog | Todos los derechos reservados para Wero09Anano</p>
-        <p>&copy; Programed by Wero09A(Felipe A.)</p>
-
-        <nav className="space-x-6 mt-4">
-          <Link href="/">Inicio</Link>
-          <Link href="https://www.youtube.com/@Wero09Anano/">Sobre mí</Link>
-          <Link href="/temas">Temas</Link>
-          <Link href="/contacto">Contacto</Link>
-        </nav>
-      </footer>
     </div>
   );
 }
