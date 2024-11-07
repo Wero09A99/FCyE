@@ -7,7 +7,7 @@ export default function Efectosmentepage() {
   return (
     <section className="p-8 font-sans bg-gray-300 min-h-screen">
       <Nav />
-      <Image src="/cerebro.jpeg" width={400} height={100} alt="Drogas varias"
+      <Image src="/cerebro.jpeg" width={500} height={100} alt="Drogas varias"
       className="absolute right-32 top-60 rounded-md"/>
       <h1 className="text-5xl font-bold text-teal-700 mt-10 mb-6">Efectos en la Mente</h1>
 
